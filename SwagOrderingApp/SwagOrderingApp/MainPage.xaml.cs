@@ -15,7 +15,6 @@ namespace SwagOrderingApp
         {
             InitializeComponent();
 
-            //var order = new SwagItemHistory();
             BindingContext = new SwagItem(); 
         }
 
@@ -37,6 +36,11 @@ namespace SwagOrderingApp
         private async void History_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new SwagItemHistory());
+        }
+
+        private async void Cancel_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
         }
     }
 }

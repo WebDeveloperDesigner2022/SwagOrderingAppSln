@@ -46,7 +46,7 @@
                          <ColumnDefinition Width="*" />
                      </Grid.ColumnDefinitions>
                      <Label Text="Name" FontSize="Subtitle" Grid.Row="0" Grid.Column="0 " Margin="10,0,0,0" Grid.RowSpan="1" VerticalOptions="Center"/>
-                     <Entry Text="{Binding Name}" Grid.Row="0" Grid.Column="1" Grid.RowSpan="1" VerticalOptions="Center" ></Entry>
+                     <Entry Text="{Binding Name}" Grid.Row="0" Grid.Column="1" Grid.RowSpan="1" VerticalOptions="Center" Margin="0,0,0,0" ></Entry>
                      <Label Text="Gender" Grid.Row="1" Grid.Column="0" FontSize="Subtitle" Grid.RowSpan="2" VerticalOptions="Center" Margin="10,30,0,0"/>
                      <Entry Text="{Binding Gender}" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" VerticalOptions="Center" Margin="0,30,0,0" />
                      <Label Text="T-Shirt Size (S,M,L,XL)" Grid.Row="2" Grid.Column="0" FontSize="Subtitle" Grid.RowSpan="2" VerticalOptions="Center" Margin="10,30,0,0"/>
@@ -65,9 +65,9 @@
                 </Grid>
 
                 <Button Text="Add"  Clicked="Button_Add" BackgroundColor="#188"  Margin="10,10,25,20" CornerRadius="10"  BorderWidth="3" BorderColor="#8f8"/>
-                <Button Text="Delete"  Clicked="Button_Delete" BackgroundColor="#188"  Margin="10,10,25,20"  BorderWidth="3" BorderColor="#8f8"/>
-                                
-          </StackLayout>   
+                <Button Text="Delete"  Clicked="Button_Delete" BackgroundColor="red"  Margin="10,10,25,20"  BorderWidth="3" BorderColor="#8f8"/>
+            <Button Text="Cancel" x:Name="Cancel" Clicked="Cancel_Clicked"  Margin="10,10,25,20"  BorderWidth="3" BackgroundColor="Gold" BorderColor="#8f8"/>
+        </StackLayout>   
    
 
       </StackLayout>                                               
