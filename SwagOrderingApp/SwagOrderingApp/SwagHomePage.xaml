@@ -8,8 +8,9 @@
     </NavigationPage.TitleView>
     <ContentPage.Content>
         <StackLayout >
-            <Label Text="From Sikhikhi" FontSize="Large" FontFamily="Baguet Script"
-                VerticalOptions="End"  Margin="0,600,0,0"
+            <Label Text="&#128024;" FontSize="Header" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            <Label Text="From Sikhikhi " FontSize="Large" FontFamily="Baguet Script"
+                VerticalOptions="End"  Margin="0,500,0,0"
                 HorizontalOptions="CenterAndExpand" />
             <Image Source="icon.jpg" VerticalOptions="End"/>
         </StackLayout>
