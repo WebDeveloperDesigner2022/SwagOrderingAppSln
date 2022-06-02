@@ -19,63 +19,57 @@
         </Grid>
     </NavigationPage.TitleView>    
        
-                    <StackLayout Padding="13,0" BackgroundColor="#fa8">
+     <StackLayout Padding="13,0" BackgroundColor="#fa8">
 
         
-                    <StackLayout Padding="13,0"
+          <StackLayout Padding="13,0"
                                      Orientation="Vertical">
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="*"/>
-                                    <RowDefinition Height="*" />
-                                    <RowDefinition Height="*"/>
-                                    <RowDefinition Height="*" />
-                                    <RowDefinition Height="*"/>
-                                    <RowDefinition Height="*" />
-                                    <RowDefinition Height="*"/>
-                                    <RowDefinition Height="*" />
-                                    <RowDefinition Height="*"/>
-                                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*" />
+               <Grid>
+                    <Grid.RowDefinitions>
+                         <RowDefinition Height="*"/>
+                         <RowDefinition Height="*" />
+                         <RowDefinition Height="*"/>
+                         <RowDefinition Height="*" />
+                         <RowDefinition Height="*"/>
+                         <RowDefinition Height="*" />
+                         <RowDefinition Height="*"/>
+                         <RowDefinition Height="*" />
+                         <RowDefinition Height="*"/>
+                         <RowDefinition Height="*" />
+                         <RowDefinition Height="*"/>
+                         <RowDefinition Height="*" />
+                        
+                     </Grid.RowDefinitions>
+                     <Grid.ColumnDefinitions>
+                         <ColumnDefinition Width="Auto" />
+                         <ColumnDefinition Width="2*" />
+                         <ColumnDefinition Width="*" />
+                     </Grid.ColumnDefinitions>
+                     <Label Text="Name" FontSize="Subtitle" Grid.Row="0" Grid.Column="0 " Margin="10,0,0,0" Grid.RowSpan="1" VerticalOptions="Center"/>
+                     <Entry Text="{Binding Name}" Grid.Row="0" Grid.Column="1" Grid.RowSpan="1" VerticalOptions="Center" ></Entry>
+                     <Label Text="Gender" Grid.Row="1" Grid.Column="0" FontSize="Subtitle" Grid.RowSpan="2" VerticalOptions="Center" Margin="10,30,0,0"/>
+                     <Entry Text="{Binding Gender}" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" VerticalOptions="Center" Margin="0,30,0,0" />
+                     <Label Text="T-Shirt Size (S,M,L,XL)" Grid.Row="2" Grid.Column="0" FontSize="Subtitle" Grid.RowSpan="2" VerticalOptions="Center" Margin="10,30,0,0"/>
+                     <Entry Text="{Binding Size}" Grid.Row="2" Grid.Column="1" Grid.RowSpan="2" VerticalOptions="Center" Margin="0,30,0,0" />
+                      <Label Text="Date of Order" Grid.Row="3" Grid.Column="0" FontSize="Subtitle" Grid.RowSpan="2" VerticalOptions="Center" Margin="10,0,0,0"/>
 
-
-
-                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto" />
-                                    <ColumnDefinition Width="2*" />
-                                    <ColumnDefinition Width="*" />
-                                </Grid.ColumnDefinitions>
-                                <Label Text="Name" FontSize="Subtitle" Grid.Row="0" Grid.Column="0 " Margin="10,0,0,0" Grid.RowSpan="1" VerticalOptions="Center"/>
-                                <Entry Text="{Binding Name}" Grid.Row="0" Grid.Column="1" Grid.RowSpan="1" VerticalOptions="Center" ></Entry>
-                                <Label Text="Gender" Grid.Row="1" Grid.Column="0" FontSize="Subtitle" Grid.RowSpan="2" VerticalOptions="Center" Margin="10,30,0,0"/>
-                                <Entry Text="{Binding Gender}" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" VerticalOptions="Center" Margin="0,30,0,0" />
-                                <Label Text="T-Shirt Size (S,M,L,XL)" Grid.Row="2" Grid.Column="0" FontSize="Subtitle" Grid.RowSpan="2" VerticalOptions="Center" Margin="10,30,0,0"/>
-                                <Entry Text="{Binding Size}" Grid.Row="2" Grid.Column="1" Grid.RowSpan="2" VerticalOptions="Center" Margin="0,30,0,0" />
-
-                                <Label Text="Date of Order" Grid.Row="3" Grid.Column="0" FontSize="Subtitle" Grid.RowSpan="2" VerticalOptions="Center" Margin="10,0,0,0"/>
-
-                                <DatePicker MinimumDate="01/01/1980"
+                      <DatePicker MinimumDate="01/01/1980"
                                                 MaximumDate="12/31/2050"
                                                 Date="{Binding Date}"   Grid.Row="3" Grid.Column="1" Grid.RowSpan="2" VerticalOptions="Center" Margin="0,0,0,0"  />
 
-                                <Label Text="T-Shirt Color" Grid.Row="4" Grid.Column="0" FontSize="Subtitle" Grid.RowSpan="2" VerticalOptions="Center" Margin="10,30,0,0"/>
-                                <Entry Text="{Binding Color}" Grid.Row="4" Grid.Column="1" Grid.RowSpan="2" VerticalOptions="Center" Margin="0,0,0,0" />
-                                <Label Text="Shipping Address" Grid.Row="5" Grid.Column="0" FontSize="Subtitle" Grid.RowSpan="2" VerticalOptions="Center" Margin="10,30,0,0"/>
-                                <Entry Text="{Binding Address}" Grid.Row="5" Grid.Column="1" Grid.RowSpan="2" VerticalOptions="Center" Margin="0,30,0,0" />
+                      <Label Text="T-Shirt Color" Grid.Row="4" Grid.Column="0" FontSize="Subtitle" Grid.RowSpan="2" VerticalOptions="Center" Margin="10,30,0,0"/>
+                      <Entry Text="{Binding Color}" Grid.Row="4" Grid.Column="1" Grid.RowSpan="2" VerticalOptions="Center" Margin="0,0,0,0" />
+                      <Label Text="Shipping Address" Grid.Row="5" Grid.Column="0" FontSize="Subtitle" Grid.RowSpan="2" VerticalOptions="Center" Margin="10,30,0,0"/>
+                      <Entry Text="{Binding Address}" Grid.Row="5" Grid.Column="1" Grid.RowSpan="2" VerticalOptions="Center" Margin="0,30,0,0" />
 
-                            </Grid>
+                </Grid>
 
-                            <Button Text="Add"  Clicked="Button_Add" BackgroundColor="#188"  Margin="10,10,25,20" CornerRadius="10"  BorderWidth="3" BorderColor="#8f8"/>
-                             <Button Text="Delete"  Clicked="Button_Delete" BackgroundColor="#188"  Margin="10,10,25,20"  BorderWidth="3" BorderColor="#8f8"/>
+                <Button Text="Add"  Clicked="Button_Add" BackgroundColor="#188"  Margin="10,10,25,20" CornerRadius="10"  BorderWidth="3" BorderColor="#8f8"/>
+                <Button Text="Delete"  Clicked="Button_Delete" BackgroundColor="#188"  Margin="10,10,25,20"  BorderWidth="3" BorderColor="#8f8"/>
                                 
-                        </StackLayout>   
+          </StackLayout>   
    
 
-                               <!--
-                                       <Button Text="Back" Grid.Row="8" Clicked="Button_Add" BackgroundColor="BlanchedAlmond"  Margin="10,10,25,20" CornerRadius="2"  Grid.ColumnSpan="3"  BorderWidth="3" BorderColor="Orange"/>
-                                 -->
-                        </StackLayout>                                               
+      </StackLayout>                                               
       
 </ContentPage>
