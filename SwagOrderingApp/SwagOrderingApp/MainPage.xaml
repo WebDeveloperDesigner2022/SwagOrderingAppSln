@@ -19,7 +19,7 @@
         </Grid>
     </NavigationPage.TitleView>    
        
-     <StackLayout Padding="13,0" BackgroundColor="#fa8">
+     <StackLayout Padding="13,0">
 
         
           <StackLayout Padding="13,0"
@@ -64,7 +64,7 @@
 
                 </Grid>
 
-                <Button Text="Add"  Clicked="Button_Add" BackgroundColor="#188"  Margin="10,10,25,20" CornerRadius="10"  BorderWidth="3" BorderColor="#8f8"/>
+                <Button Text="Add"  Clicked="Button_Add" BackgroundColor="#green"  Margin="10,10,25,20" CornerRadius="10"  BorderWidth="3" BorderColor="#8f8"/>
                 <Button Text="Delete"  Clicked="Button_Delete" BackgroundColor="red"  Margin="10,10,25,20"  BorderWidth="3" BorderColor="#8f8"/>
             <Button Text="Cancel" x:Name="Cancel" Clicked="Cancel_Clicked"  Margin="10,10,25,20"  BorderWidth="3" BackgroundColor="Gold" BorderColor="#8f8"/>
         </StackLayout>   

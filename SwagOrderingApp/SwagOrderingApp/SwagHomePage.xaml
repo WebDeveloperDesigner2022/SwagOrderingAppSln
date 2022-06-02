@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SwagOrderingApp.SwagHomePage" BackgroundColor="#fa8">
+             x:Class="SwagOrderingApp.SwagHomePage" >
     <NavigationPage.TitleView >
         <Label Text="Swag Home" FontSize="Title" TextColor="Green" HorizontalOptions="CenterAndExpand"  VerticalOptions="Center" />
 
@@ -9,6 +9,7 @@
     <ContentPage.Content>
         <StackLayout >
             <Label Text="&#128024;" FontSize="Header" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            <ActivityIndicator IsRunning="true" />
             <Label Text="From Sikhikhi " FontSize="Large" FontFamily="Baguet Script"
                 VerticalOptions="End"  Margin="0,500,0,0"
                 HorizontalOptions="CenterAndExpand" />
