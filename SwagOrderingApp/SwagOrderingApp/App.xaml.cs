@@ -10,10 +10,10 @@ namespace SwagOrderingApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage())
+            MainPage = new NavigationPage(new SwagHomePage())
             {
                 BarTextColor = Color.White,
-                BarBackgroundColor = Color.WhiteSmoke
+                BarBackgroundColor = Color.Beige
             };
         }
 

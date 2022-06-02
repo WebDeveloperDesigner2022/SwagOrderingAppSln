@@ -13,9 +13,9 @@
                 <ColumnDefinition Width="2*" />
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Label Text="Swag Ordering!" FontSize="Title" TextColor="Green" Grid.Row="0" Grid.Column="0" Grid.RowSpan="1" VerticalOptions="Center" />
+            <Label Text="Swag Ordering!" FontSize="Title" TextColor="Blue" Grid.Row="0" Grid.Column="0" Grid.RowSpan="1" VerticalOptions="Center" />
             
-            <Button x:Name="History" Text="Click for history here    &#128722;" TextColor="Gold" BackgroundColor="WhiteSmoke" BorderWidth="0" Clicked="History_Clicked" Padding="0" Grid.Row="0" Grid.Column="1" />
+            <Button x:Name="History" Text="Click for history here    &#128722;" TextColor="blue"  BackgroundColor="WhiteSmoke" BorderWidth="0" Clicked="History_Clicked" Padding="0" Grid.Row="0" Grid.Column="1" />
         </Grid>
     </NavigationPage.TitleView>    
        

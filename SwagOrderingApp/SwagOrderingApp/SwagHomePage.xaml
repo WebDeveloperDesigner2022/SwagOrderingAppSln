@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SwagOrderingApp.SwagHomePage" BackgroundColor="#fa8">
+    <NavigationPage.TitleView >
+        <Label Text="Swag Home" FontSize="Title" TextColor="Green" HorizontalOptions="CenterAndExpand"  VerticalOptions="Center" />
+
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout >
+            <Label Text="From Sikhikhi" FontSize="Large" FontFamily="Baguet Script"
+                VerticalOptions="End"  Margin="0,600,0,0"
+                HorizontalOptions="CenterAndExpand" />
+            <Image Source="icon.jpg" VerticalOptions="End"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SwagOrderingApp.SwagItemHistory"  BackgroundColor="#fa8" Title="Swag Ordering History" >
+             x:Class="SwagOrderingApp.SwagItemHistory"  BackgroundColor="#fa8" >
+    <NavigationPage.TitleView >
+        <Label Text="Swag Ordering History" FontSize="Title" TextColor="Green"  VerticalOptions="Center" />
+
+    </NavigationPage.TitleView>
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="+" Clicked="OnItemAdded" >
             <ToolbarItem.IconImageSource>

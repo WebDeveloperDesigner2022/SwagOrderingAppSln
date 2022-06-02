@@ -83,7 +83,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SwagOrderingApp\SwagOrderingApp.csproj">
       <Project>{9379D4F5-33A8-44B2-9D60-981AC1489C1A}</Project>
